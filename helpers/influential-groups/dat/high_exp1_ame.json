@@ -1,0 +1,5 @@
+{"dataset_dir": "../../../data/",
+ "dataset": "high",
+ "shape_infection": 1,
+ "lower_param": 0.01,
+ "higher_param": 2}

@@ -1,0 +1,6 @@
+{"dataset_dir": "../../../data/",
+ "dataset": "email-Enron",
+ "shape_infection": 3,
+ "lower_param": 0.01,
+ "unstable": true,
+ "higher_param": 5}

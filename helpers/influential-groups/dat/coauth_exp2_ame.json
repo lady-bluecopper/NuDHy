@@ -1,0 +1,5 @@
+{"dataset_dir": "../../../data/",
+ "dataset": "coauth",
+ "shape_infection": 2,
+ "lower_param": 0.01,
+ "higher_param": 10}
