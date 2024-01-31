@@ -29,7 +29,7 @@ def compute_hyper_coreness(shell_indices, num_v):
         if max_coreness[m] > 0:
             # normalize coreness values by max
             hypercoreness += np.array([1.0 * x / max_coreness[m]
-                                      for x in shell_indices[m]])
+                                       for x in shell_indices[m]])
     return hypercoreness
 
 

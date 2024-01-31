@@ -4,12 +4,10 @@ met_path = '../out/'
 sample_path = '../out/samples'
 # random seed for reproducibility
 seed = 0
-# sampler names
-samplers = ['NuDHy_A', 'NuDHy_C']
 # folder where the datasets are placed
 folder = '../data/'
 # max number of workers to use in the parallel computations
-max_workers = 1
+max_workers = 2
 # number of samples to generate
 num_samples = 33
 
