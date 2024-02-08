@@ -423,10 +423,10 @@ public abstract class NuDHy extends InnerOuterIDTransformer implements Sampler {
                 || name.equalsIgnoreCase("NuDHy_Degs")) {
             return new NuDHy_Degs();
         }
-        if (name.equalsIgnoreCase(NuDHy_BIOT.class.getName())
+        if (name.equalsIgnoreCase(NuDHy_JOINT.class.getName())
                 || name.equalsIgnoreCase("NuDHy_C")
                 || name.equalsIgnoreCase("NuDHy_BIOT")) {
-            return new NuDHy_BIOT();
+            return new NuDHy_JOINT();
         }
         throw new ClassNotFoundException(name);
     }
