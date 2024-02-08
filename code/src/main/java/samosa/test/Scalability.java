@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import samosa.samplers.NuDHy;
 import samosa.samplers.NuDHy_Degs;
-import samosa.samplers.NuDHy_BIOT;
+import samosa.samplers.NuDHy_JOINT;
 import samosa.utils.io.Writer;
 
 /**
@@ -28,7 +28,7 @@ public class Scalability {
 
         final NuDHy[] samplers = {
             new NuDHy_Degs(),
-            new NuDHy_BIOT()
+            new NuDHy_JOINT()
         };
 
         System.out.println("Executing runtime experiment for " + Config.datasetName);
