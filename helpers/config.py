@@ -122,15 +122,13 @@ fi_threshs = {'eco01100': '1e-3,1e-3',
 
 # names of the samplers
 sampler_names = {'samosa.adri.NuDHy_A': 'NuDHy-Degs',
-                 'samosa.adri.NuDHy_B': 'NuDHy-Degs-MH',
-                 'samosa.adri.NuDHy_C': 'NuDHy-BIOT',
+                 'samosa.adri.NuDHy_C': 'NuDHy-JOINT',
                  'samosa.samplers.NuDHy_Degs': 'NuDHy-Degs',
-                 'samosa.samplers.NuDHy_BIOT': 'NuDHy-BIOT',
+                 'samosa.samplers.NuDHy_JOINT': 'NuDHy-JOINT',
                  'NuDHy_A': 'NuDHy-Degs',
-                 'NuDHy_B': 'NuDHy-Degs-MH',
-                 'NuDHy_C': 'NuDHy-BIOT',
+                 'NuDHy_C': 'NuDHy-JOINT',
                  'NuDHy_Degs': 'NuDHy-Degs',
-                 'NuDHy_BIOT': 'NuDHy-BIOT'}
+                 'NuDHy_JOINT': 'NuDHy-JOINT'}
 
 # user-friendly dataset names
 dataset_names = {'eco01100': 'ecoli',
