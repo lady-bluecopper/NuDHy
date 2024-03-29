@@ -115,9 +115,6 @@ do
                 echo '             Sampling              '
                 echo '-----------------------------------'
 
-                OUTPUT="$resultsDir/sampling/"
-                mkdir -p $OUTPUT
-
                 echo "Running command ..."
                 echo "$JVM $SAMP_jar datasetsDir=$datasetsDir datasetName=$dataset resultsDir=$resultsDir maxNumSwapsFactor=$maxNumSwapsFactor numSamples=${defaults[1]} samplerType=$samplerType headTailDisjoint=$headTailDisjoint"
                 echo "---- `date`"
@@ -128,9 +125,6 @@ do
                 echo '-----------------------------------'
                 echo '     Sampling for Convergence      '
                 echo '-----------------------------------'
-
-                OUTPUT="$resultsDir/convergence/"
-                mkdir -p $OUTPUT
 
                 echo "Running command ..."
                 echo "$JVM $SAMP_C_jar datasetsDir=$datasetsDir datasetName=$dataset resultsDir=$resultsDir maxNumSwapsFactor=$maxNumSwapsFactor numSamples=${defaults[1]} samplerType=$samplerType"
