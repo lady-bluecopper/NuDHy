@@ -123,5 +123,19 @@ do
                 echo "---- `date`"
                 $JVM $SAMP_jar datasetsDir=$datasetsDir datasetName=$dataset resultsDir=$resultsDir maxNumSwapsFactor=$maxNumSwapsFactor numSamples=${defaults[1]} samplerType=$samplerType headTailDisjoint=$headTailDisjoint
         fi
+
+        if [[ ${experiments[4]} -eq "1" ]]; then
+                echo '-----------------------------------'
+                echo '     Sampling for Convergence      '
+                echo '-----------------------------------'
+
+                OUTPUT="$resultsDir/convergence/"
+                mkdir -p $OUTPUT
+
+                echo "Running command ..."
+                echo "$JVM $SAMP_C_jar datasetsDir=$datasetsDir datasetName=$dataset resultsDir=$resultsDir maxNumSwapsFactor=$maxNumSwapsFactor numSamples=${defaults[1]} samplerType=$samplerType"
+                echo "---- `date`"
+                $JVM $SAMP_C_jar datasetsDir=$datasetsDir datasetName=$dataset resultsDir=$resultsDir maxNumSwapsFactor=$maxNumSwapsFactor numSamples=${defaults[1]} samplerType=$samplerType
+        fi
 done
 echo 'Terminated.'
