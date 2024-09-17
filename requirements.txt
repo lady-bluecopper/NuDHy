@@ -11,7 +11,7 @@ nbformat==5.9.2
 numpy==1.23.5
 pandas==2.1.4
 pyamg==5.0.1
-scikit-learn==1.1.1
+scikit-learn==1.5.0
 scikit-network==0.31.0
 scipy==1.10.1
 seaborn==0.13.0
